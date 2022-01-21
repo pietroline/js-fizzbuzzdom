@@ -16,7 +16,7 @@ h1{
     margin: 2rem 0;
 }
 
-h2, span{
+.ms_margin_1rem{
     margin: 1rem;
 }
 
@@ -27,6 +27,34 @@ h2, span{
 
     color: #fff;
 }
+
+.colore_0bd6a1{
+    display: inline-block;
+
+    width: 80px;
+    height: 20px;
+
+    background-color: #0bd6a1;
+}
+
+.colore_ffd166{
+    display: inline-block;
+
+    width: 80px;
+    height: 20px;
+
+    background-color: #ffd166;
+}
+
+.colore_f0466f{
+    display: inline-block;
+
+    width: 80px;
+    height: 20px;
+
+    background-color: #f0466f;
+}
+
 
 #container{
     max-width: 1200px;
