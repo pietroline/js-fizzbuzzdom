@@ -33,8 +33,13 @@ for(let i=1; i<=numeroBox; i++){
         flag = 5;
                                                         
     }else{
-         flag = NaN;
-                                                    
+        // verifico se il numero della box, non divisibile ne per 3 ne per 5, è pari o dispari. Mi comporto di conseguenza, applicando un text color differente
+        if(i % 2 == 0){
+            flag = null; //numero pari
+        }else{
+            flag = NaN; //numero dispari
+
+        }                                             
     }
 
     // utilizzo lo switch basato sul valore di flag, precedentemente impostato, al fine di appendere l' elemento stilizzato opportunamente nel DOM
@@ -48,8 +53,11 @@ for(let i=1; i<=numeroBox; i++){
         case 35:  
             mj_getElementById_container.innerHTML = mj_getElementById_container.innerHTML + `<div class="box fizz buzz"> ${multiplo3_5} </div>`; 
             break;
+        case null:
+            mj_getElementById_container.innerHTML = mj_getElementById_container.innerHTML + `<div class="box text_white"> ${i} </div>`;
+            break;
         default:
-            mj_getElementById_container.innerHTML = mj_getElementById_container.innerHTML + `<div class="box"> ${i} </div>`; 
+            mj_getElementById_container.innerHTML = mj_getElementById_container.innerHTML + `<div class="box text_black"> ${i} </div>`; 
             break;
     }
    
