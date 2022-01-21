@@ -20,6 +20,10 @@ h1{
     margin: 1rem;
 }
 
+.ms_padding_left_40px{
+    padding-left: 40px;
+}
+
 .regole{
     display: flex;
     flex-direction: column;
