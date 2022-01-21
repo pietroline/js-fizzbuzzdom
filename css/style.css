@@ -55,6 +55,15 @@ h1{
     background-color: #f0466f;
 }
 
+.colore_118ab2{
+    display: inline-block;
+
+    width: 80px;
+    height: 20px;
+
+    background-color: #118ab2;
+}
+
 
 #container{
     max-width: 1200px;
